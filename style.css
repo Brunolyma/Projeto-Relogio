@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;400;500;600;700&display=swap');
+/*Fontes 
+font-family: 'Lobster', cursive;
+font-family: 'Quicksand', sans-serif;
+*/
+body {
+    box-sizing: border-box;
+    font: normal 18pt arial;
+    background: linear-gradient(45deg, black, white );
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 400px;
+    overflow-y: hidden;
+}
+header {
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 5px rgba(15, 15, 15, 0.637);
+}
+section {
+    padding-top: 5px;
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(31, 31, 31, 0.479);
+    text-align: center;
+}
+h3#clock {
+    display: block;
+    width: 30%;
+    margin: 25px 35%;
+    background-color: rgba(0, 0, 0, 0.788);
+    color:rgb(250, 250, 250);
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(15, 15, 15, 0.295);
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 2px 3px rgba(15, 15, 15, 0.336);
+    cursor: pointer;
+}
+h3#clock:hover {
+    background-color: rgb(94, 94, 94);
+    color: white;
+}
+div#content-2 {
+    padding-bottom: 30px;
+}
+img#img {
+    border-radius: 100%;
+    box-shadow: 0px 0px 12px 2px rgb(0 0 0 / 79%);
+    overflow: hidden;
+    width: 320px;
+    height: 320px;
+    position: relative;
+}
+footer {
+    color: rgb(233, 233, 233);
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+}
