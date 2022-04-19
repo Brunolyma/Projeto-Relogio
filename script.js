@@ -9,28 +9,28 @@ var nome = "Bruno";
 // console.log(nome)
 if (hour <= 4) {
   //Dará uma mensagem diferente dependendo das horas
-  imagem.setAttribute("src", "madrugada.jpg"); //imagem alternada
+  imagem.setAttribute("src", "madrugada.webp"); //imagem alternada
   sayHi.innerText = `Boa madrugada, ${nome}!`; //Mensagem de saudação
   document.body.setAttribute(
     "style",
     "background: linear-gradient(45deg, black, #262626, #686868, #dfdcdb)"
   ); // gradiente que altera o css inline de <body>
 } else if (hour < 12) {
-  imagem.setAttribute("src", "manha.jpg");
+  imagem.setAttribute("src", "manha.webp");
   sayHi.innerText = `Bom dia, ${nome}!`;
   document.body.setAttribute(
     "style",
     "background: linear-gradient(45deg, #153d56, #bcc34e )"
   );
 } else if (hour <= 18) {
-  imagem.setAttribute("src", "tarde.jpg");
+  imagem.setAttribute("src", "tarde.webp");
   document.body.setAttribute(
     "style",
     "background: linear-gradient(45deg, rgb(159 48 85), rgb(255 207 76))"
   );
   sayHi.innerText = `Boa tarde, ${nome}!`;
 } else {
-  imagem.setAttribute("src", "noite.jpg");
+  imagem.setAttribute("src", "imagens/noite.webp");
   sayHi.innerText = `Boa noite, ${nome}!`;
   document.body.setAttribute(
     "style",
@@ -85,4 +85,4 @@ function clock() { // função que dará funcionalidade para o formato do relóg
   var oClock = document.querySelector("#clock");
   oClock.innerText = `${hour}:${minute}:${second}`;
 }
-window.setInterval("clock()", 1000); // método para fazer com que a janela faça um intervalo de atualização em 1000 milisegundos(1 segundo)
+window.setInterval("clock()", 1000); //webp método para fazer com que a janela faça um intervalo de atualização em 1000 milisegundos(1 segundo)
