@@ -9,28 +9,28 @@ var nome = "Bruno";
 // console.log(nome)
 if (hour <= 4) {
   //Dará uma mensagem diferente dependendo das horas
-  imagem.setAttribute("src", "/imagens/madrugada.webp"); //imagem alternada
+  imagem.setAttribute("src", "imagens/madrugada.webp"); //imagem alternada
   sayHi.innerText = `Boa madrugada, ${nome}!`; //Mensagem de saudação
   document.body.setAttribute(
     "style",
     "background: linear-gradient(45deg, black, #262626, #686868, #dfdcdb)"
   ); // gradiente que altera o css inline de <body>
 } else if (hour < 12) {
-  imagem.setAttribute("src", "/imagens/manha.webp");
+  imagem.setAttribute("src", "imagens/manha.webp");
   sayHi.innerText = `Bom dia, ${nome}!`;
   document.body.setAttribute(
     "style",
     "background: linear-gradient(45deg, #153d56, #bcc34e )"
   );
 } else if (hour <= 18) {
-  imagem.setAttribute("src", "/imagens/tarde.webp");
+  imagem.setAttribute("src", "imagens/tarde.webp");
   document.body.setAttribute(
     "style",
     "background: linear-gradient(45deg, rgb(159 48 85), rgb(255 207 76))"
   );
   sayHi.innerText = `Boa tarde, ${nome}!`;
 } else {
-  imagem.setAttribute("src", "/imagens/noite.webp");
+  imagem.setAttribute("src", "imagens/noite.webp");
   sayHi.innerText = `Boa noite, ${nome}!`;
   document.body.setAttribute(
     "style",
