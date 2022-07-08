@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Relógio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  </head>
-  <body onload="clock()" style="background: null">
-    <header>
-      <h1 id="greet"></h1>
-    </header>
-    <section>
-      <div id="content-1">
-        <h3 id="clock" onmouseenter="dWeek()"></h3>
-      </div>
-      <div id="content-2">
-        <img id="img" src="" alt="" />
-      </div>
-    </section>
-    <footer>
-      <p>&copy;BrunoLima</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Relógio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body onload="start()" style="background: null">
+  <header>
+    <h1 id="greet"></h1>
+  </header>
+  <section>
+    <div>
+      <h3 id="clock" onmouseenter="week(time())"></h3>
+    </div>
+    <div>
+      <img id="img" src="" alt="" />
+    </div>
+  </section>
+  <footer>
+    <p>&copy;BrunoLima</p>
+  </footer>
+
+  <!-- Primeiro código -->
+  <!-- <script src="script.js"></script> -->
+
+  <!-- Atualização para programação funcional -->
+  <script src="functional.js"></script>
+</body>
+
 </html>
